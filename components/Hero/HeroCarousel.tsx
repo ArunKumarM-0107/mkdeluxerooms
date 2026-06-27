@@ -35,7 +35,7 @@ export default function HeroCarousel() {
       ))}
 
       {/* Navigation Dots */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+      <div className="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 gap-3 z-20">
         {images.map((_, index) => (
           <button
             key={index}
