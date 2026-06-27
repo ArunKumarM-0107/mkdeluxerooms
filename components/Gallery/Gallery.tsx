@@ -11,6 +11,8 @@ const images = [
   "/images/room3.jpg",
   "/images/room4.jpg",
   "/images/room5.jpg",
+  "/images/bathroom1.jpg",
+  "/images/bathroom2.jpg",
 ];
 
 export default function Gallery() {
