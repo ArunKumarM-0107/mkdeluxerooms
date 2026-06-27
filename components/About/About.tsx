@@ -27,7 +27,7 @@ export default function About() {
           <div className="relative overflow-hidden rounded-3xl shadow-2xl">
 
             <Image
-              src="/images/room1.jpg"
+              src="/images/madhappa.jpeg"
               alt="MK Deluxe Rooms"
               width={700}
               height={700}

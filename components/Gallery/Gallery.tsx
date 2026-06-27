@@ -13,6 +13,12 @@ const images = [
   "/images/room5.jpg",
 ];
 
+const videos = [
+  "/videos/roomvideo1.mp4",
+  "/videos/roomvideo2.mp4",
+  "/videos/roomvideo3.mp4",
+];
+
 export default function Gallery() {
   const [index, setIndex] = useState(-1);
 
@@ -145,3 +151,44 @@ export default function Gallery() {
     </section>
   );
 }
+{/* Videos Section */}
+
+<section className="mt-20">
+
+  <div className="text-center mb-10">
+
+    <h2 className="font-[family:var(--font-heading)] text-4xl md:text-5xl text-[#D4AF37]">
+      Room Videos
+    </h2>
+
+    <p className="text-gray-400 mt-3">
+      Take a virtual tour of our rooms before your stay.
+    </p>
+
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    {videos.map((video, index) => (
+
+      <div
+        key={index}
+        className="overflow-hidden rounded-2xl bg-[#111] border border-[#D4AF37]/20 shadow-xl hover:border-[#D4AF37] transition duration-300"
+      >
+
+        <video
+          controls
+          preload="metadata"
+          className="w-full h-72 object-cover"
+        >
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+      </div>
+
+    ))}
+
+  </div>
+
+</section>
