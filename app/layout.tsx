@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { Cormorant_Garamond, Poppins } from "next/font/google";
 
-const inter = Inter({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-heading",
 });
 
-const playfair = Playfair_Display({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
-  title: "MK Deluxe Rooms | Comfortable Stay Near MM Hills",
-  description:
-    "Premium rooms near Male Mahadeshwara Betta with Wi-Fi, TV, Hot Water and Family Friendly Stay.",
+  title: "MK Deluxe Rooms",
+  description: "Luxury stay near Male Mahadeshwara Betta",
 };
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable}`}>
+      <body className={`${cormorant.variable} ${poppins.variable}`}>
         {children}
       </body>
     </html>

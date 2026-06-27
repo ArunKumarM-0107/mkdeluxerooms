@@ -1,37 +1,22 @@
 @import "tailwindcss";
 
-:root{
-  --gold:#C9A227;
-  --black:#080808;
-  --card:#161616;
-  --white:#ffffff;
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-  margin:0;
-  padding:0;
-  background:var(--black);
-  color:white;
-  font-family:var(--font-inter),sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h1,h2,h3,h4{
-  font-family:var(--font-playfair),serif;
-}
-
-.gold{
-  color:var(--gold);
-}
-
-.section{
-  padding:90px 8%;
-}
-
-.container{
-  max-width:1280px;
-  margin:auto;
+* {
+  box-sizing: border-box;
 }
